@@ -10,4 +10,9 @@
     <string name="started">Start</string>
     <string name="fragment_welcome">Welcome</string>
     <string name="shoe_store_inventory">Shoe Store Inventory</string>
+    <string name="fragment_instructions">Instructions</string>
+    <string name="instruction_one"><![CDATA[Tap the + icon to add a new shoe ->]]></string>
+    <string name="instruction_two"><![CDATA[Tap the Save Button to save the shoe ->]]>]</string>
+    <string name="save">Save</string>
+    <string name="next">Next</string>
 </resources>
