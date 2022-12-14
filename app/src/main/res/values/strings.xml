@@ -7,7 +7,6 @@
     <string name="register">Register</string>
     <string name="fragment_login">Login</string>
     <string name="welcome">welcome</string>
-    <string name="started">Start</string>
     <string name="fragment_welcome">Welcome</string>
     <string name="shoe_store_inventory">Shoe Store Inventory</string>
     <string name="fragment_instructions">Instructions</string>
@@ -15,4 +14,7 @@
     <string name="instruction_two"><![CDATA[Tap the Save Button to save the shoe ->]]>]</string>
     <string name="save">Save</string>
     <string name="next">Next</string>
+    <string name="fragment_list">Shoe List</string>
+    <string name="empty_list">There is no shoe</string>
+    <string name="logout">Logout</string>
 </resources>
