@@ -3,6 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <variable
+            name="detailFragment"
+            type="com.elhady.inventory.ui.DetailFragment" />
 
     </data>
 
@@ -124,6 +127,7 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/side_margin"
             android:text="@string/cancel"
+            android:onClick="@{() -> detailFragment.navigateBackToList()}"
             app:layout_constraintEnd_toStartOf="@id/next_button"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@id/next_button" />

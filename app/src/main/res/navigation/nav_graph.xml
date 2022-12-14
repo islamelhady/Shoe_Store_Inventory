@@ -46,5 +46,11 @@
         android:id="@+id/detailFragment"
         android:name="com.elhady.inventory.ui.DetailFragment"
         android:label="@string/fragment_details"
-        tools:layout="@layout/fragment_detail"/>
+        tools:layout="@layout/fragment_detail">
+        <action
+            android:id="@+id/action_detailFragment_to_shoeListFragment"
+            app:destination="@id/shoeListFragment"
+            app:popUpTo="@id/shoeListFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
 </navigation>
