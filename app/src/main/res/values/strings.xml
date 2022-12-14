@@ -17,4 +17,10 @@
     <string name="fragment_list">Shoe List</string>
     <string name="empty_list">There is no shoe</string>
     <string name="logout">Logout</string>
+    <string name="cancel">Cancel</string>
+    <string name="add_item">Add Item</string>
+    <string name="company">Company</string>
+    <string name="size">Size</string>
+    <string name="description">Description</string>
+    <string name="fragment_details">Details</string>
 </resources>

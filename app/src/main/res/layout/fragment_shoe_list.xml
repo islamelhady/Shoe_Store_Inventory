@@ -3,6 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <variable
+            name="shoeList"
+            type="com.elhady.inventory.ui.ShoeListFragment" />
 
     </data>
     <!--ConstraintLayout is used to avoid nested views and I can move the views anywhere easily    -->
@@ -39,6 +42,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:onClick="@{() -> shoeList.navigateToDetails()}"
             android:src="@drawable/ic_add"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"

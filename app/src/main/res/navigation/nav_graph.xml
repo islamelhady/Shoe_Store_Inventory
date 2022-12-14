@@ -37,5 +37,14 @@
         android:id="@+id/shoeListFragment"
         android:name="com.elhady.inventory.ui.ShoeListFragment"
         android:label="@string/fragment_list"
-        tools:layout="@layout/fragment_shoe_list" />
+        tools:layout="@layout/fragment_shoe_list" >
+        <action
+            android:id="@+id/action_shoeListFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.elhady.inventory.ui.DetailFragment"
+        android:label="@string/fragment_details"
+        tools:layout="@layout/fragment_detail"/>
 </navigation>
