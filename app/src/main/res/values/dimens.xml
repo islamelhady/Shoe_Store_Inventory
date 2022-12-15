@@ -3,4 +3,5 @@
     <dimen name="side_margin">16dp</dimen>
     <dimen name="margin_between_elements">8dp</dimen>
     <dimen name="font_size">30sp</dimen>
+    <dimen name="small_font_size">15sp</dimen>
 </resources>

@@ -6,14 +6,17 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
 import com.elhady.inventory.R
 import com.elhady.inventory.databinding.FragmentDetailBinding
+import com.elhady.inventory.viewmodel.SharedViewModel
 
 
 class DetailFragment : Fragment() {
 
     private lateinit var binding: FragmentDetailBinding
+    private val sharedViewModel: SharedViewModel by activityViewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -26,13 +29,19 @@ class DetailFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        binding.detailFragment = this
+
+        binding.apply {
+            detailFragment = this@DetailFragment
+            viewModel = sharedViewModel
+        }
     }
 
     fun navigateBackToList(){
         findNavController().navigate(R.id.action_detailFragment_to_shoeListFragment)
     }
 
-
-
+    fun saveButton(){
+        sharedViewModel.addShoe()
+        findNavController().navigate(R.id.action_detailFragment_to_shoeListFragment)
+    }
 }

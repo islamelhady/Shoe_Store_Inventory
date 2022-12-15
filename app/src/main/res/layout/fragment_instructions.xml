@@ -19,6 +19,17 @@
         android:padding="@dimen/side_margin"
         android:background="@color/gray">
 
+        <TextView
+            android:id="@+id/instructionText"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/how_to_add_item"
+            android:textSize="@dimen/font_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <Button
             android:id="@+id/btnSave"
@@ -27,8 +38,10 @@
             android:layout_marginTop="180dp"
             android:clickable="false"
             android:text="@string/save"
+            android:backgroundTint="@color/blue_light"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/instructionText"
+             />
 
         <TextView
             android:id="@+id/instTwo"
@@ -38,10 +51,10 @@
             android:layout_marginTop="184dp"
             android:layout_marginEnd="19dp"
             android:text="@string/instruction_two"
-            android:textSize="10sp"
+            android:textSize="@dimen/small_font_size"
             app:layout_constraintEnd_toStartOf="@+id/btnSave"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toBottomOf="@id/instructionText" />
 
         <Button
             android:id="@+id/btnNext"
@@ -62,7 +75,7 @@
             android:layout_marginEnd="28dp"
             android:layout_marginBottom="36dp"
             android:text="@string/instruction_one"
-            android:textSize="15sp"
+            android:textSize="@dimen/small_font_size"
             app:layout_constraintBottom_toTopOf="@+id/btnNext"
             app:layout_constraintEnd_toStartOf="@+id/floatingActionButton"
             app:layout_constraintStart_toStartOf="parent" />
@@ -74,6 +87,7 @@
             android:layout_marginBottom="16dp"
             android:clickable="false"
             android:src="@drawable/ic_add"
+            android:backgroundTint="@color/blue_light"
             app:layout_constraintBottom_toTopOf="@+id/btnNext"
             app:layout_constraintEnd_toEndOf="parent" />
 

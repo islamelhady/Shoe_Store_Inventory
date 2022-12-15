@@ -25,11 +25,11 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="323dp"
             android:text="@string/shoe_store_inventory"
-            android:textAlignment="center"
+            android:gravity="center"
             android:textSize="@dimen/font_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintBottom_toTopOf="@+id/welcomeTextView" />
 
         <TextView
             android:id="@+id/welcomeTextView"
@@ -38,12 +38,11 @@
             android:layout_marginTop="5dp"
             android:layout_marginBottom="236dp"
             android:text="@string/welcome"
-            android:textAlignment="center"
+            android:gravity="center"
             android:textSize="@dimen/font_size"
             app:layout_constraintBottom_toTopOf="@+id/start"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/shoeTextView" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <Button
             android:id="@+id/start"
