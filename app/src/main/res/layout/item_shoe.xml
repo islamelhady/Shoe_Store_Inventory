@@ -4,6 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+        <import type="com.elhady.inventory.utils.Converter"/>
+
         <variable
             name="shoe"
             type="com.elhady.inventory.model.Shoe" />
@@ -71,7 +73,7 @@
                     android:layout_marginTop="@dimen/side_margin"
                     android:textColor="@color/blue"
                     android:textSize="@dimen/font_size"
-                    android:text="@{shoe.size}"
+                    android:text="@={Converter.intToString(shoe.size)}"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     tools:text="45" />

@@ -22,7 +22,7 @@
     <string name="company">Company</string>
     <string name="size">Size</string>
     <string name="description">Description</string>
-    <string name="fragment_details">Details</string>
+    <string name="fragment_details">Add Shoe</string>
     <string name="name">Name</string>
     <string name="how_to_add_item">How to add item</string>
 </resources>

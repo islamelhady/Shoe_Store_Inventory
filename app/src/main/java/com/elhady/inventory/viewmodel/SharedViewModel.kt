@@ -26,7 +26,7 @@ class SharedViewModel: ViewModel() {
     }
 
     fun initShoe() {
-        shoe = Shoe("Shoe name", "Company name", "44", "jorden four")
+        shoe = Shoe("Shoe name", "Company name", 45, "jorden four")
     }
 
     override fun onCleared() {

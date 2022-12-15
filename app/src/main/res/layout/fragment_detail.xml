@@ -3,6 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
+        <import type="com.elhady.inventory.utils.Converter"/>
+
         <variable
             name="detailFragment"
             type="com.elhady.inventory.ui.DetailFragment" />
@@ -79,7 +81,8 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/sizeInputView"
-                android:text="@={viewModel.shoe.size}"
+                android:text="@={Converter.intToString(viewModel.shoe.size)}"
+                android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
 
