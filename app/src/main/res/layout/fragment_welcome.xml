@@ -18,6 +18,15 @@
         android:padding="@dimen/side_margin"
         tools:context=".ui.WelcomeFragment">
 
+        <ImageView
+            android:id="@+id/imageWelcom"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="@dimen/side_margin"
+            android:src="@drawable/welcom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:id="@+id/shoeTextView"
